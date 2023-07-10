@@ -3,6 +3,7 @@
 namespace Nece\Gears\Validate\ThinkPHP;
 
 use Nece\Gears\IValidate;
+use Nece\Gears\ValidateException as GearsValidateException;
 use think\exception\ValidateException;
 use think\Validate as ThinkValidate;
 
@@ -29,7 +30,7 @@ class Validate implements IValidate
         try {
             $v->failException(true)->check($data);
         } catch (ValidateException $e) {
-            throw new Validate($e->getMessage(), $e->getCode());
+            throw new GearsValidateException($e->getMessage(), $e->getCode());
         }
     }
 }
