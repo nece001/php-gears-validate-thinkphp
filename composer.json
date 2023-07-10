@@ -1,11 +1,11 @@
 {
     "name": "nece001/php-gears-validate-thinkphp",
-    "description": "PHP CMS的验证ThinkPHP实现",
+    "description": "PHP 验证器ThinkPHP实现",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Nece\\Gears\\Cms\\Validate\\ThinkPHP\\": "src/"
+            "Nece\\Gears\\Validate\\ThinkPHP\\": "src/"
         }
     },
     "authors": [
