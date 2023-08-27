@@ -30,7 +30,23 @@ class Validate implements IValidate
         try {
             $v->failException(true)->check($data);
         } catch (ValidateException $e) {
-            throw new GearsValidateException($e->getMessage(), $e->getCode());
+            throw $this->buildException($e->getMessage(), $e->getCode());
         }
+    }
+
+    /**
+     * 构建异常
+     *
+     * @Author nece001@163.com
+     * @DateTime 2023-08-27
+     *
+     * @param string $message
+     * @param string $code
+     *
+     * @return GearsValidateException
+     */
+    public function buildException($message, $code = ''): GearsValidateException
+    {
+        return new GearsValidateException($message, $code);
     }
 }
