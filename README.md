@@ -1,2 +1,3 @@
 # php-gears-validate-thinkphp
-PHP CMS的验证ThinkPHP实现
+
+基于ThinkPHP的验证类
