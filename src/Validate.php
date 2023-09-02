@@ -2,12 +2,12 @@
 
 namespace Nece\Gears\Validate\ThinkPHP;
 
-use Nece\Gears\IValidate;
+use Nece\Gears\IValidator;
 use Nece\Gears\ValidateException as GearsValidateException;
 use think\exception\ValidateException;
 use think\Validate as ThinkValidate;
 
-class Validate implements IValidate
+class Validate implements IValidator
 {
     /**
      * 是否批量验证
