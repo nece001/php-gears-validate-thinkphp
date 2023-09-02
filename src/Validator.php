@@ -7,7 +7,13 @@ use Nece\Gears\ValidateException as GearsValidateException;
 use think\exception\ValidateException;
 use think\Validate as ThinkValidate;
 
-class Validate implements IValidator
+/**
+ * 验证器
+ *
+ * @Author nece001@163.com
+ * @DateTime 2023-09-02
+ */
+class Validator implements IValidator
 {
     /**
      * 是否批量验证
